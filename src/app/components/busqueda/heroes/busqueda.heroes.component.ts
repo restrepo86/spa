@@ -8,8 +8,8 @@ import { HeroesService, Heroe } from '../../../services/heroes.service';
 })
 export class BusquedaHeroesComponent implements OnInit {
 
-  protected heroes: Heroe[];
-  protected termino: string;
+  public heroes: Heroe[];
+  public termino: string;
 
   constructor(
     private activateRoute: ActivatedRoute,
