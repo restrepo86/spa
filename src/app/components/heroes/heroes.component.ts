@@ -20,7 +20,7 @@ public heroes: Heroe[] = [];
     console.table(this.heroes);
   }
 
-  verHeroe( index: number ) {
+  verHeroe(index: number): void {
     this.router.navigate(['/heroe', index]);
   }
 
