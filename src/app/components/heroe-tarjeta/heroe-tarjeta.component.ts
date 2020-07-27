@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class HeroeTarjetaComponent implements OnInit {
 
-  @Input() protected heroe: Heroe;
-  @Input() protected indice: number;
+  @Input() public heroe: Heroe;
+  @Input() public indice: number;
 
   constructor(
     private router: Router
