@@ -1,7 +1,7 @@
 <h1>{{ heroe.nombre }} <small>{{ heroe.aparicion }}</small></h1>
 <hr>
 
-<div class="row">
+<div class="row animated fadeIn fast">
     <div class="col-md-4">
 
         <img [src]="heroe.img" class="img-fluid" [alt]="heroe.nombre">
@@ -16,8 +16,8 @@
             {{ heroe.bio }}
         </p>
         <div>
-            <img [src]="getImageStore()" alt="">
-            <!--Si es DC la imagen de DC si no la de MARVEL-->
+            <img *ngIf="heroe.casa === 'Marvel'" class="img-logo" src="assets/img/marvel.png" [alt]="heroe.nombre">
+            <img *ngIf="heroe.casa === 'DC'" class="img-logo" src="assets/img/dc.png" [alt]="heroe.nombre">
         </div>
 
     </div>
